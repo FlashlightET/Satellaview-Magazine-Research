@@ -1,4 +1,4 @@
-with open('custom_palette.txt') as f:
+with open('lights_palette.txt') as f:
     q=f.readlines()
 
 #clean up newlines

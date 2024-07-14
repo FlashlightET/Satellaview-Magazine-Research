@@ -1,4 +1,5 @@
-with open('new_rom.bs','rb') as f:
+fn='another_test_with_graphic_and_palette'
+with open(fn+'.bs','rb') as f:
     q=f.read()
 
 mode='hirom'
@@ -44,6 +45,6 @@ if checksum+' '+inverse_checksum!=original_checksum:
     new_file[int('FFDD',16)]=int(checksum.split(' ')[1],16)
     new_file[int('FFDE',16)]=int(inverse_checksum.split(' ')[0],16)
     new_file[int('FFDF',16)]=int(inverse_checksum.split(' ')[1],16)
-    with open('fixed_checksum.bs','wb') as f:
+    with open(fn+'_fixed_checksum.bs','wb') as f:
         f.write(bytes(new_file))
     

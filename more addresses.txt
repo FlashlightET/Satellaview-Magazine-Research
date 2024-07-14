@@ -250,6 +250,24 @@ SPECIFICALLY
 58B0: Special Issue
 
 
+5400: what is nintendo power
+	+00: header xpos
+	+01: header ypos (note: 18 covers the bottom bar, but it gets overwritten with the prompts)
+	+02: header width
+	+03: header height
+	+04: header border
+	
+	+10: body xpos
+	+11: body ypos
+	+12: body width
+	+13: body height
+	+14: body border
+	
+	+32-33: next page id (0000 disables next page - this was used to make the satellanite mag only display one page)
+	
+	+28: number of pages
+
+
 and to be exact about it:
 adress 5400 begins the table of screens listed above
 each screen is 240 bytes (F0) long
@@ -258,3 +276,12 @@ each screen is 240 bytes (F0) long
 
 
 
+
+
+
+
+BACK TO TAKING NOTES - 2024-07-14
+ram addresses
+0002 - currently rendering GUI element y position...
+1502 - length of menu
+1504 - currently selected menu item

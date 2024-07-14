@@ -1,4 +1,4 @@
-(OLD RESEARCH DOCUMENT)
+old documentation (header doc is for the intro screen specifically)
 
 page header
 
@@ -17,6 +17,29 @@ byte 0C: textbox border/inner style
 byte 0D: ??
 byte 0E: ??
 byte 0F: start of text unless thats actually 0D?
+
+STYLES
+00: no border black inner
+01: white border black inner
+02: orange border black inner
+03: no border black inner
+04: no border no inner
+05: white border no inner
+06: orange border no inner
+07: no border no inner
+08: no border semitransparent inner
+09: white border semitransparent inner (default)
+0A: orange border semitransparent inner
+0B: no border semitransparent inner
+0C: no border black inner
+0D: white border black inner
+0E: orange border black inner
+0F: no border black inner
+
+
+5100: exit screen border style
+
+
 
 
 NP Magazine 107.bs
