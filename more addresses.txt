@@ -1,0 +1,260 @@
+TEXT POINTERS
+
+start at A402
+
+note that the byte order is swapped, 6F B1 actually points to B16F
+40A42C: fifa title (B16F)
+40A42E: fifa page 1
+40A430: fifa page 2
+40A432: fifa page 3
+40A434: fifa page 4
+40A436: fifa page 5
+40A438: fifa page 6
+40A43A: fifa page 7
+40A43B: fifa page 8
+40A43C: fifa page 9
+40A43E: fifa page 10
+40A440: 3d hockey title
+40A442: 3d hockey page 1
+40A444: 3d hockey page 2
+40A446: 3d hockey page 3
+40A448: 3d hockey page 4
+40A44A: 3d hockey page 5
+
+
+
+
+
+
+
+
+
+
+40A4B2: players pulse title
+40A4B4: players pulse page 1
+40A4B6: "love nintendo style" title
+40A4B8: "love nintendo style" text
+
+fifa title is text 15
+key in snowflake mountain is text 2A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PAGE HEADERS
+
+8C00 - what is nintendo power magazine?
+8C20 - players pulse intro screen
+8C40 - love nintendo style (1)
+8C60 - love nintendo style (2)
+8C80 - danny libov drawing
+8CA0 - 2d or not 2d (1)
+8CC0 - 2d or not 2d (2)
+8CE0 - 2d or not 2d (3)
+8D00 - 2d or not 2d (4)
+8D20 - 2d or not 2d (5)
+8D40 - 2d or not 2d (6)
+8D60 - 2d or not 2d (7)
+8D80 - 2d or not 2d (8)
+
+8DA0 - power charts intro screen
+8DC0 - nintendo 64 top 10
+8DE0 - goldeneye image
+8E00 - goldeneye text
+8E20 - snes top 10
+8E40 - link to the past image
+8E60 - link to the past text
+8E80 - gb top 10
+8EA0 - links awakening image
+8EC0 - links awaking(sic) text
+8EE0 - most wanted
+
+8F00 - classified information intro screen
+8F20 - fifa page 1
+				02 01 00 09 00 09 00 07 00 03 15 FF 16 FF FF FF
+				                              HD    TX           hd = HEADING tx = TEXT (FF for none)
+											  so 15 points to A402 + 15(actually twice that) which is A42C
+8F40 - fifa pg2
+8F60 - fifa pg3
+8F80 - fifa pg4
+8FA0 - fifa pg5
+8FC0 - fifa pg6
+8FE0 - fifa pg7
+9000 - fifa pg8
+9020 - fifa pg9
+9040 - fifa pg10
+9060 - fifa pg11
+9080 - fifa pg12
+90A0 - fifa pg13
+90C0 - fifa pg14
+90E0 - fifa pg15
+9100 - fifa pg16
+9120 - fifa pg17
+9140 - fifa pg18
+9160 - 3d hockey pg1
+9180 - 3d hockey pg2
+91A0 - 3d hockey pg3
+91C0 - 3d hockey pg4
+91E0 - 3d hockey pg5
+9200 - 3d hockey pg6
+9220 - 3d hockey pg7
+9240 - 3d hockey pg8
+9260 - 3d hockey pg9
+9280 - 3d hockey pg10
+
+92A0 - counselors corner intro screen
+92C0 - dkr snowflake mountain
+92E0 - dkr snowflake mountain (image 1)
+9300 - dkr snowflake mountain (image 2)
+9320 - dkr dino mountain
+9340 - dkr dino mountain (image 1)
+9360 - dkr dino mountain (image 2)
+9380 - dkr dino mountain (image 3)
+93A0 - i lost natalya
+93C0 - i lost natalya (image 1)
+93E0 - i lost natalya (image 2)
+9400 - silo ambush
+9420 - silo ambush (image 1)
+9440 - silo ambush (image 2)
+9460 - cant escape (1)
+9480 - cant escape (2)
+94A0 - cant escape (image 1)
+94C0 - cant escape (image 2)
+
+94E0 - special issue intro screen
+9500 - hanafuda cards image
+9520 - hanafuda cards text 1
+9540 - hanafuda cards text 2
+9560 - hanafuda cards text 3
+9580 - hanafuda cards text 4
+95A0 - hanafuda cards text 5
+95C0 - hanafuda cards text 6
+95E0 - hanafuda cards text 7
+9600 - luigi 64 1
+9620 - luigi 64 2
+9640 - luigi 64 3
+9660 - new game boy colors
+9680 - april new releases 1
+96A0 - april new releases 2
+
+
+
+TEXT DISPLAY MODES
+00 background only
+01 header
+02 body
+03 header, body
+04 takes a while to load
+05 takes a while to load, header
+06 takes a while to load, body
+07 takes a while to load, header, body
+08 [repeats 4-7 from here on out]
+09 
+0A 
+0B 
+0C 
+0D
+0E
+0F
+
+
+
+
+
+
+
+
+MAIN PAGE
+00 81 40 81 40 4E 49 4E 54 45 4E 44 4F 20 50 4F
+57 45 52 20 4D 61 67 61 7A 69 6E 65 20 4D 45 4E
+55 00 40 81 40 00 05 50 4C 41 59 45 52 27 53 20
+50 55 4C 53 45 00 40 81 40 81 40 81 40 81 40 81
+40 81 40 81 40 81 40 81 40 00 50 4F 57 45 52 20
+43 48 41 52 54 00 81 40 81 40 81 40 81 40 81 40
+81 40 81 40 81 40 81 40 81 40 81 40 00 43 4C 41
+53 53 49 46 49 45 44 20 49 4E 46 4F 52 4D 41 54
+49 4F 4E 00 5B 83 8B 82 D6 81 40 81 40 81 40 00
+43 4F 55 4E 53 45 4C 4F 52 53 27 20 43 4F 52 4E
+45 52 00 40 81 40 81 40 81 40 81 40 81 40 81 40
+81 40 00 53 50 45 43 49 41 4C 20 49 53 53 55 45
+00 81 40 81 40 81 40 81 40 81 40 81 40 81 40 81
+40 81 40 81 40 00 00 40 81 40 81 40 81 40 81 40
+81 40 81 40 81 40 81 40 81 40 81 40 81 40 81 40
+81 40 81 40 81 40 81 40 00 00 40 81 40 81 40 81
+40 81 40 81 40 81 40 81 40 81 40 81 40 81 40 81
+40 81 40 81 40 81 40 81 40 81 40 00 01 02 03 04
+05 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+
+note the incrementing numbers at the end - those are links
+00: corrupted nintendo power magazine to wa screen
+01: PLAYERS PULSE
+02: POWER CHART
+03: CLASSIFIED INFORMATION
+04. COUNSELORS CORNER
+05: SPECIAL ISSUE
+06: FIFA
+07: 3D HOCKEY
+08: DKR
+09: Goldeneye
+0A: Hanafuda cards
+0B: Luigi 64
+0C: New game boy colors
+0D: April new releases
+0E: Corrupted exit screen
+
+
+
+
+
+
+
+
+BLAH
+
+55E0 accessed when power chars is selected
+then 5610 onwards has byte pairs that correspond to the PAGES (in the header table)
+FE FF signals the end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+address at 5432 is the menu id for the top menu
+address at 58E2 is the menu id for the special issue menu
+
+SPECIFICALLY
+
+55E0: Power Chart
+56D0: Classified Information
+58B0: Special Issue
+
+
+and to be exact about it:
+adress 5400 begins the table of screens listed above
+each screen is 240 bytes (F0) long
+
+
+
+
+
