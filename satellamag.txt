@@ -1,0 +1,58 @@
+page header
+
+byte 00: ??
+byte 01: transition
+byte 0203: image to load(!!)
+byte 04: some kind of *8px shift
+byte 05: y position (very extreme)
+byte 06: y position (up) (not as extreme)
+byte 07: 00 and 01 show up fine but other values i tested corrupt the image (applies to nintendo power front page image)
+byte 08: textbox position x
+byte 09: textbox position y
+byte 0A: textbox width
+byte 0B: textbox height
+byte 0C: textbox border/inner style
+byte 0D: ??
+byte 0E: ??
+byte 0F: start of text unless thats actually 0D?
+
+
+NP Magazine 107.bs
+A400: Initial screen
+
+10000: seems to switch to data
+
+
+
+
+10410-14DAE (410410-414DAE in RAM)
+
+note: ram copy is just at 400000 so no need to really mention its ram offset too
+
+redo:
+
+   10410-14DAE: IMAGE DATA for initial Nintendo Power screen. they seem to be compressed by the tile as I messed with some bytes and it only corrupted a couple tiles.
+or 1040B-14DAE (length 49A4)
+
+
+
+286F6-2B386: IMAGE DATA for first image in fifa
+
+7678C-777BF: IMAGE DATA for second image in fifa
+
+
+
+NP PALETTE
+7FFF 7AB5 74E7 75CE...
+
+76798-767B7: Background palette
+
+
+
+
+
+
+
+
+
+
