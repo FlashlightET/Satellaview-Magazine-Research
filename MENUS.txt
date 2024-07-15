@@ -1,0 +1,50 @@
+Menus are 304 (decimal, 130 hex) bytes long starting at 7400 (hex) and ending at 8C00 (hex)
+Each string is terminated with 00.
+
+MENU HEADER: Offset is $00 and length 38d
+NUM OPTIONS: Offset is $26 and length 1d
+MENU OPTIONS: Starting from offset $27, they are 35 bytes long and terminated with 00.
+	Option 1: $27
+	Option 2: $4A
+	Option 3: $6D
+	Option 4: $90
+	Option 5: $B3
+	Option 6: $D6
+	Option 7: $F9
+OPTION LINKS:
+	$11C: Option 1 links to this screen
+	$11D: Option 2
+	$11E: 3
+	$11F: 4
+	$120: 5
+	$121: 6
+	$122: 7
+The rest are 00.
+
+
+
+Screens start at 5400 (hex). each screen is 240 bytes (F0) long
+The main menu is not one of these screens.
+
+5400: what is nintendo power
+	+00: header xpos
+	+01: header ypos (note: 18 covers the bottom bar, but it gets overwritten with the prompts)
+	+02: header width
+	+03: header height
+	+04: header border
+	
+	+08: body xpos
+	+09: body ypos
+	+0A: body width
+	+0B: body height
+	+0C: body border (8X = scrolling)
+	
+	+10: other xpos
+	+11: other ypos
+	+12: other width
+	+13: other height
+	+14: other border
+	
+	+28: number of pages
+	
+	+30 and so on: page ids ended with FE FF

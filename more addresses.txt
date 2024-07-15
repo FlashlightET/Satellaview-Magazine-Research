@@ -257,15 +257,23 @@ SPECIFICALLY
 	+03: header height
 	+04: header border
 	
-	+10: body xpos
-	+11: body ypos
-	+12: body width
-	+13: body height
-	+14: body border
+	+08: body xpos
+	+09: body ypos
+	+0A: body width
+	+0B: body height
+	+0C: body border (8X = scrolling)
 	
-	+32-33: next page id (0000 disables next page - this was used to make the satellanite mag only display one page)
+	+10: other xpos
+	+11: other ypos
+	+12: other width
+	+13: other height
+	+14: other border
 	
 	+28: number of pages
+	
+	+30 and so on: page ids ended with FE FF
+	
+	
 
 
 and to be exact about it:
